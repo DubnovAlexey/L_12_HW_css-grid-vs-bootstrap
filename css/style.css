@@ -1,0 +1,34 @@
+/* Basic background colors for blocks */
+.box-1 { background-color: #cc0000; }
+.box-2 { background-color: #e67300; }
+.box-3 { background-color: #ffcc00; }
+.box-4 { background-color: #00b359; }
+.box-5 { background-color: #00bfff; }
+
+/* General styling for all boxes */
+[class*="box-"] {
+    padding: 2rem 0;
+    border: 1px solid white;
+}
+
+/* Option 3: Custom class for 20% width on XL screens */
+@media (min-width: 1200px) {
+    .custom-col-xl {
+        width: 20%;
+        flex: 0 0 auto;
+    }
+}
+
+/* Option 4: CSS Grid for XL screens */
+@media (min-width: 1200px) {
+    .grid-xl-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    /* Resetting Bootstrap column widths inside our Grid */
+    .grid-xl-container > div {
+        width: 100%;
+        max-width: 100%;
+    }
+}
