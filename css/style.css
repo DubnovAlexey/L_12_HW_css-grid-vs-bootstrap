@@ -1,9 +1,23 @@
 /* Basic background colors for blocks */
-.box-1 { background-color: #cc0000; }
-.box-2 { background-color: #e67300; }
-.box-3 { background-color: #ffcc00; }
-.box-4 { background-color: #00b359; }
-.box-5 { background-color: #00bfff; }
+.box-1 {
+    background-color: #cc0000;
+}
+
+.box-2 {
+    background-color: #e67300;
+}
+
+.box-3 {
+    background-color: #ffcc00;
+}
+
+.box-4 {
+    background-color: #00b359;
+}
+
+.box-5 {
+    background-color: #00bfff;
+}
 
 /* General styling for all boxes */
 [class*="box-"] {
